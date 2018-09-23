@@ -1,0 +1,41 @@
+html
+  body
+    .diamond
+    .form-wrap
+      h2.mob Hotel Booking Form
+      h3.mob Mobile Version
+      h5.mob view on a desktop for the full experience
+      form(action='')
+        .location
+          label(for='location') LOCATION
+          br
+          input(type='text', name='location' placeholder='New York, NY')
+          br
+        .guests
+          label(for='guests') NUMBER OF GUESTS
+          br
+          br
+          button(type='button')#cnt-down.counter-btn -
+          input(type='text', id="guestNo" name='guests' value=2)
+          button(type='button')#cnt-up.counter-btn +
+          
+        .dates
+          .arrival
+            label(for='arrival') ARRIVAL
+            br
+            input(name='arrival' type="text" onfocus="(this.type='date')" onblur="(this.type='text')" placeholder="10/03/2016")
+          .departure
+            label(for='arrival') DEPARTURE
+            br
+            input(name='departure' type="text" onfocus="(this.type='date')" onblur="(this.type='text')" placeholder="05/11/2016")
+      button(type='button').btn BOOK NOW
+      .linkbox
+        .links
+          .origin
+            p Check out Seth Coelen's original design over on dribbble
+            a(href="https://dribbble.com/shots/2464177-Daily-UI-067-Hotel-Booking" target="_blank")
+              i.fa.fa-dribbble
+          .me
+            p Why not take a look at my other pens while you're here
+            a(href="https://codepen.io/lewisvrobinson")
+              i.fa.fa-codepen
